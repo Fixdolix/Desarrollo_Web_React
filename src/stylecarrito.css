@@ -1,0 +1,183 @@
+/* Style para el header */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(75, 55, 35, 0.94);
+  z-index: 1000;
+}
+
+.navbar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.navbar nav ul li {
+  display: inline-block;
+}
+
+.navbar nav ul li a {
+  display: block;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+.navbar nav ul li a:hover {
+  background-color: rgba(75, 55, 35, 0.94);
+}
+
+/* Style para la tabla conteniendo los elementos del carrito*/
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  background: url(../src/images/inicio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Centramos el contenido horizontalmente */
+  margin-top: 80px;
+}
+
+/* Contenedor para los elementos del carrito y resumen */
+.container {
+  display: flex;
+  width: 180%; /* Ajusta el ancho según sea necesario */
+  max-width: 1500px; /* Ajuste de ancho máximo */
+}
+
+/* Cambiamos el ancho para que ocupen 50% cada uno */
+.carrito-container {
+  flex: 1;
+  background-color: rgba(75, 55, 35, 0.94);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px; /* Márgenes para separación */
+  color: white;
+  margin-left: -350px;
+}
+
+.summary-container {
+  background-color: rgba(75, 55, 35, 0.94);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px; /* Márgenes para separación */
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #adadad;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    background-color: rgba(75, 55, 35, 0.94);
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+    background-color: rgba(90, 70, 50, 0.8);
+}
+
+.tab.active {
+    background-color: #6d4c41;
+    border-bottom: 2px solid #C09788;
+}
+
+.tab-content {
+    padding: 20px;
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #adadad;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #6d4c41;
+}
+
+td {
+    background-color: rgba(90, 70, 50, 0.8);
+}
+
+select,
+input[type="date"] {
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(75, 55, 35, 0.7);
+    color: white;
+    border: none;
+}
+
+input[type="date"] {
+    color: white;
+}
+
+/* Style para el cuadro resumen de la derecha de la pagina */
+.summary-content {
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    padding: 10px;
+    border: 1px solid #adadad;
+    border-radius: 4px;
+    background-color: rgba(90, 70, 50, 0.8);
+    text-align: center;
+}
+
+.summary-item h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.summary-button {
+    padding: 10px;
+    background-color: #C09788;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.summary-button:hover {
+    background-color: #a67b6f;
+}

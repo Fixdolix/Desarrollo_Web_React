@@ -1,0 +1,165 @@
+/* Style para el header */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(75, 55, 35, 0.94);
+    z-index: 1000;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navbar nav ul li {
+    display: inline-block;
+}
+
+.navbar nav ul li a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.navbar nav ul li a:hover {
+    background-color: rgba(75, 55, 35, 0.94);
+}
+
+/* Style para el body */
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background: url(../src/images/inicio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    margin-top: 80px;
+}
+
+/* Contenedor para la devolución */
+.container {
+    display: flex;
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    width: 180%; /* Usar el 100% del ancho disponible */
+    max-width: 1200px; /* Ajuste de ancho máximo */
+    margin-left: -150px;
+}
+
+.carrito-container {
+    flex: 1;
+    background-color: rgba(75, 55, 35, 0.94);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px; /* Márgenes para separación */
+    color: white;
+}
+
+.lista-wrapper {
+    width: 100%; /* Permitir que la lista ocupe todo el ancho del contenedor */
+    overflow-x: auto; /* Habilitar desplazamiento horizontal si es necesario */
+}
+
+table {
+    width: 100%; /* Ancho completo del contenedor */
+    border-collapse: collapse; /* Eliminar el espacio entre las celdas */
+    margin-top: 20px; /* Espaciado entre el encabezado y la tabla */
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px; /* Espaciado interno */
+    text-align: left; /* Alinear texto a la izquierda */
+    border-bottom: 1px solid #adadad; /* Línea de separación entre filas */
+}
+
+th {
+    background-color: rgba(90, 70, 50, 0.8); /* Color de fondo para encabezados */
+    color: white; /* Color del texto de los encabezados */
+}
+
+tr:hover {
+    background-color: rgba(90, 70, 50, 0.6); /* Color al pasar el mouse sobre las filas */
+}
+
+.selected {
+    background-color: rgba(85, 47, 221, 0.842); /* Color de fondo para el elemento seleccionado */
+    cursor: pointer; /* Cambia el cursor para indicar que es seleccionable */
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(75, 55, 35, 0.7);
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #C09788;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a67b6f;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border: 1px solid #adadad;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    background-color: rgba(90, 70, 50, 0.8);
+}
+
+/* Estilo para el contenedor de búsqueda */
+.search-container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 100%; /* Ancho completo dentro del contenedor */
+    max-width: 600px; /* Máximo ancho para la barra de búsqueda */
+    box-sizing: border-box;
+    background-color: white; /* Cambiar el color de fondo a blanco */
+    color: rgba(75, 55, 35, 0.94); /* Cambiar el color del texto a un tono oscuro */
+    border: 1px solid #adadad; /* Añadir un borde para definir el campo */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilo para el encabezado de la lista */
+.list-header {
+    display: flex; /* Usar flex para alineación */
+    justify-content: space-between; /* Espacio entre los elementos */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.list-header div {
+    flex: 1; /* Cada encabezado ocupa el mismo espacio */
+    text-align: center; /* Centrar texto en cada encabezado */
+}
